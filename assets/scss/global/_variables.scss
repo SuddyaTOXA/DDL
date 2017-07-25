@@ -1,32 +1,32 @@
 /*fonts*/
-$font-main: 'Roboto', Arial, sans-serif;
-$font-heading: 'Patua One', 'Roboto', Arial, sans-serif;
+$font-main: 'Open Sans', Arial, sans-serif;
+$font-heading: 'Raleway', Arial, sans-serif;
+$font-heading-banner: 'Gotham Pro', $font-heading;
 
 /*fonts-weight*/
 $normal: 400;
-$medium: 500;
 $bold: 700;
 
 /*fonts-size*/
 $size-main: 18px;
-$size-small: 16px;
-$size-heading1: 44px;
-$size-heading2: 40px;
-$size-heading3: 28px;
+$size-small: 14px;
+$size-heading-banner: 80px;
+$size-heading-big: 36px;
+$size-heading: 24px;
 
 /*line-height*/
-$line-height: 1.6;
-$line-height-heading: 1;
+$line-height: 1.65;
+$line-height-heading: 1.125;
 
 /*colors*/
 $white: #ffffff;
 $color-text: #333333;
-$color-text2: #313b43;
-$color-text3: #ff614c;
+$color-text-banner: #20354a;
+$color-text-label: #415365;
+$color-text-input: #192632;
 $color-bg1: $white;
-$color-bg2: #ff4948;
-$color-bg3: #1d4d94;
-$color-bg4: #d5d5d5;
+$color-bg2: #07b7ae;
+$color-bg3: #0ec2b9;
 
 /*transition*/
 $transition-link: 0.2s;
