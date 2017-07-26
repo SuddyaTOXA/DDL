@@ -1,4 +1,236 @@
+.section-hero {
+  position: relative;
+  background-color: $white;
+  .hero {
+    position: relative;
+    @include bg();
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 25%;
+      z-index: 1;
+      left: 0;
+      bottom: 0;
+      @include css3-prefix('background-image','linear-gradient(to top, #11d6bc 0%, rgba(17, 214, 188, 0) 100%)');
+      opacity: .2;
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 10;
+    display: table;
+    min-height: 720px;
+    padding: 40px 0 134px;
+  }
+  .content {
+    max-width: 540px;
+    color: $color-text-banner;
+    font-size: $size-heading;
+    line-height: 1.5;
+    text-shadow: 0 0 28px rgba(255, 255, 255, 0.26);
+  }
+}
+  .left-box,
+  .right-box {
+    display: table-cell;
+    width: 50%;
+    height: 100px;
+    vertical-align: middle;
+  }
+  .left-box {
+    width: 46%;
+    padding-right: 10px;
+  }
+  .right-box {
+    width: 54%;
+    padding-left: 10px;
+  }
+    .banner-title {
+      margin-bottom: 18px;
+      font-family: $font-heading-banner;
+      font-size: $size-heading-banner;
+      font-weight: $bold;
+      line-height: $line-height-heading;
+      letter-spacing: -.03em;
+      color: #20354a;
+      text-shadow: 0 0 28px rgba(255, 255, 255, 0.54);
+    }
+  .form-box {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 34px 40px 40px;
+    @include border-radius($radius-main);
+    box-shadow: 0 17px 60px rgba(44, 105, 112, 0.25);
+    background-color: $white;
+    .box-title {
+      margin-bottom: 37px;
+    }
+  }
+    .box-title {
+      margin-bottom: 10px;
+      font-family: $font-main;
+      font-size: $size-heading;
+      text-align: center;
+      color: $color-text-label;
+    }
+    .form-list {
+      > li {
+        position: relative;
+        padding-left: 56px;
+        margin-bottom: 22px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .input-wrap {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          @include css3-prefix('transform','translate(0, -50%)');
+        }
+      }
+    }
+      .form-btn-box {
+        position: relative;
+        margin-top: 41px;
+        text-align: center;
+        &:after,
+        &:before {
+          position: absolute;
+          content: '';
+          width: 59px;
+          height: 1px;
+          top: 50%;
+          background-color: #e6e6e6;
+          @include css3-prefix('transform','translate(0, -50%)');
+        }
+        &:after {
+          right: -20px;
+        }
+        &:before {
+          left: -20px;
+        }
+      }
+
+.section-about-us {
+  text-align: center;
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+  .section-title {
+    margin-bottom: 20px;
+    font-size: $size-heading-big;
+    color: $color-text-banner;
+  }
+
+
+
+
+
+
+
+
+
 .section-reviews {
+  overflow: hidden;
+  position: relative;
+  padding-top: 390px;
+  padding-bottom: 100px;
   @include bg();
   background-color: $color-bg3;
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+  > img {
+    position: absolute;
+    z-index: 1;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    @include css3-prefix('transform', 'translate(-50%, -50%)');
+    opacity: .1;
+  }
 }
+  .section-bg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    @include bg();
+    opacity: .1;
+  }
+  .review-box {
+    position: relative;
+    max-width: 940px;
+    min-height: 255px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &:before {
+      position: absolute;
+      z-index: 1;
+      content: '';
+      width: 131px;
+      height: 105px;
+      left: 220px;
+      top: 0;
+      background-image: url(../../img/quotes.png);
+      @include bg();
+      opacity: .1;
+    }
+  }
+    .review-img-box {}
+      .review-img-wrap {
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        float: left;
+        width: 180px;
+        height: 180px;
+        line-height: 176px;
+        text-align: center;
+        @include border-radius(50%);
+        background-color: red;
+        img {
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+        }
+      }
+      .review-desc {
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        margin-top: -10px;
+        padding-left: 92px;
+      }
+
+.swiper-reviews {
+  //margin-bottom: 110px;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom, .swiper-pagination-fraction {
+ // bottom: -90px;
+}    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      border: 2px solid $white;
+      background-color: transparent;
+      opacity: 1;
+      &:hover,
+      &:focus {
+        background-color: $white;
+        opacity: .7;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $white;
+    }
