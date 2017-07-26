@@ -19,7 +19,7 @@
 <body>
     <div class="wrapper">
         <section class="section-hero">
-            <div class="hero" style="background-image: url(img/layer-23d.jpg)">
+            <div class="hero" style="display: none; background-image: url(img/layer-23d.jpg)">
                 <div class="container">
                     <div class="left-box">
                         <h1 class="banner-title">Stop Wasting
@@ -54,8 +54,24 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-video">
-
+            <div class="hero-video" style="display: none;">
+                <div class="container" style="background-image: url(img/video.jpg)">
+                    <!--<video playsinline  loop="" muted="" autoplay="" class="video-bg" >-->
+                    <video playsinline  loop="" muted="" class="video-bg" >
+                        <!--<source src="video/iris_train.mp4" type="video/mp4">-->
+                        <source src="video/iris_train.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+            <div class="hero-video-v2">
+                <div class="container">
+                    <div class="hero-video-container">
+                        <video playsinline  loop="" muted="" autoplay="" class="video-bg" >
+                            <!--<source src="video/iris_train.mp4" type="video/mp4">-->
+                            <source src="video/iris_train.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
             </div>
             <!--<img src="img/layer-23d.jpg" alt="">-->
         </section>
@@ -64,40 +80,94 @@
             <div class="container">
                 <ul class="info-list">
                     <li>
-                        <div class="info-box">
-                            <div class="info-icon-wrap">
-                                <img src="img/phone-icon@2x.png" width="61" alt="">
+                        <a href="#" title="">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="cell">
+                                            <div class="info-icon-wrap">
+                                                <img src="img/phone-icon@2x.png" width="61" alt="">
+                                            </div>
+                                            <h3 class="box-title">1. Contact Us</h3>
+                                            <div class="info-decs">
+                                                <p>Call Digital Doc or your preferred
+                                                    dealer partner.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="cell">
+                                            <div class="info-decs">
+                                                <p>Call Digital Doc or your preferred
+                                                    dealer partner. Call Digital Doc or your preferred
+                                                    dealer partner. Call Digital Doc or your preferred
+                                                    dealer partner.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h3 class="box-title">1. Contact Us</h3>
-                            <div class="info-decs">
-                                <p>Call Digital Doc or your preferred
-                                    dealer partner.</p>
-                            </div>
-                        </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="info-box">
-                            <div class="info-icon-wrap">
-                                <img src="img/chat-icon@2x.png" width="70" alt="">
+                        <a href="#" title="">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="cell">
+                                            <div class="info-icon-wrap">
+                                                <img src="img/chat-icon@2x.png" width="70" alt="">
+                                            </div>
+                                            <h3 class="box-title">2. Consult</h3>
+                                            <div class="info-decs">
+                                                <p>Your local Territory Manager will
+                                                contact you for a product fitting
+                                                conversation.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="cell">
+                                            <div class="info-decs">
+                                                <p>Call Digital Doc or your preferred
+                                                    dealer partner. Call Digital Doc or your preferred
+                                                    dealer partner. Call Digital Doc or your preferred
+                                                    dealer partner.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h3 class="box-title">2. Consult</h3>
-                            <div class="info-decs">
-                                <p>Your local Territory Manager will
-                                    contact you for a product fitting
-                                    conversation.</p>
-                            </div>
-                        </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="info-box">
-                            <div class="info-icon-wrap">
-                                <img src="img/camera-icon@2x.png" width="18" alt="">
+                        <a href="#" title="">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="cell">
+                                            <div class="info-icon-wrap">
+                                                <img src="img/camera-icon@2x.png" width="18" alt="">
+                                            </div>
+                                            <h3 class="box-title">3. Participate</h3>
+                                            <div class="info-decs">
+                                                <p>Participate in a Live in person camera demoin your office.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="cell">
+                                            <div class="info-decs">
+                                                <p>Call Digital Doc or your preferred
+                                                    dealer partner. Call Digital Doc or your preferred
+                                                    dealer partner. Call Digital Doc or your preferred
+                                                    dealer partner.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h3 class="box-title">3. Participate</h3>
-                            <div class="info-decs">
-                                <p>Participate in a Live in person camera demoin your office.</p>
-                            </div>
-                        </div>
+                        </a>
                     </li>
                 </ul>
 
@@ -109,7 +179,9 @@
                 </div>
 
                 <div class="video-box">
-
+                    <div class="video-container">
+                        <iframe class="my-video" src="http://www.youtube.com/embed/CrQ9c01RpLQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="form-box" style="display: none;">
                     <h3 class="box-title">Schedule A Demo</h3>
