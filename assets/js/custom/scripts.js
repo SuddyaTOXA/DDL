@@ -22,5 +22,15 @@ $(function(){
                 loop: true
             });
         }
+
+        if ($('.autoplay').length) {
+            var video = $('video.autoplay').get(0);
+                enableInlineVideo(video, {
+                    iPad: true
+                });
+                setTimeout(function () {
+                    video.play();
+                }, 200);
+        }
 	});
 });
