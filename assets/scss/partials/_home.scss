@@ -66,7 +66,16 @@
     .box-title {
       margin-bottom: 37px;
     }
+    &.other {
+      max-width: 100%;
+      .box-title {}
+      .btn-submit {
+        width: 100%;
+        min-width: auto;
+      }
+    }
   }
+
     .box-title {
       margin-bottom: 10px;
       font-family: $font-main;
@@ -89,7 +98,20 @@
           @include css3-prefix('transform','translate(0, -50%)');
         }
       }
+      .other & {
+        margin: 0 -5px;
+        > li {
+          display: inline-block;
+          width: 24%;
+          margin-bottom: 0;
+          padding: 0 5px;
+          label {
+            display: none;
+          }
+        }
+      }
     }
+
       .form-btn-box {
         position: relative;
         margin-top: 41px;
@@ -213,6 +235,11 @@
   .content {
     max-width: 800px;
     margin: 0 auto 52px;
+  }
+  .form-box {
+    position: relative;
+    margin-bottom: -130px;
+    z-index: 5;
   }
 }
   .section-title {
@@ -362,6 +389,11 @@
     left: 50%;
     @include css3-prefix('transform', 'translate(-50%, -50%)');
     opacity: .1;
+  }
+  .section-title {
+    margin-bottom: 18px;
+    text-align: center;
+    color: $white;
   }
 }
   .section-bg {

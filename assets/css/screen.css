@@ -337,6 +337,11 @@ a.btn, .btn {
   background-color: #ffffff; }
   .form-box .box-title {
     margin-bottom: 37px; }
+  .form-box.other {
+    max-width: 100%; }
+    .form-box.other .btn-submit {
+      width: 100%;
+      min-width: auto; }
 
 .box-title {
   margin-bottom: 10px;
@@ -361,6 +366,15 @@ a.btn, .btn {
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%); }
+.other .form-list {
+  margin: 0 -5px; }
+  .other .form-list > li {
+    display: inline-block;
+    width: 24%;
+    margin-bottom: 0;
+    padding: 0 5px; }
+    .other .form-list > li label {
+      display: none; }
 
 .form-btn-box {
   position: relative;
@@ -490,6 +504,10 @@ a.btn, .btn {
   .section-about-us .content {
     max-width: 800px;
     margin: 0 auto 52px; }
+  .section-about-us .form-box {
+    position: relative;
+    margin-bottom: -130px;
+    z-index: 5; }
 
 .section-title {
   margin-bottom: 34px;
@@ -639,6 +657,10 @@ a.btn, .btn {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: .1; }
+  .section-reviews .section-title {
+    margin-bottom: 18px;
+    text-align: center;
+    color: #ffffff; }
 
 .section-bg {
   position: absolute;
