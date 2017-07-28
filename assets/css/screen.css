@@ -596,6 +596,8 @@ a.btn, .btn {
   .flip-container .info-decs {
     max-width: 220px;
     margin: 0 auto; }
+  .flip-container .back .info-decs {
+    max-width: 80%; }
   .flip-container .box-title {
     margin-bottom: 4px;
     color: #ffffff; }
