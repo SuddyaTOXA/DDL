@@ -16,3 +16,6 @@
   background-color: #EFF7F6;
   @include transition($transition-other);
 }
+#ui-datepicker-div {
+  z-index: 999 !important;
+}

@@ -23,14 +23,33 @@ $(function(){
             });
         }
 
+        //for iphone-inline-video
         if ($('.autoplay').length) {
-            var video = $('video.autoplay').get(0);
+            var videoBox = $('video.autoplay'),
+                video = videoBox.get(0);
                 enableInlineVideo(video, {
                     iPad: true
                 });
                 setTimeout(function () {
                     video.play();
+                    videoBox.addClass('v-play');
                 }, 200);
+            videoBox.on('click', function () {
+                if($(this).hasClass('v-play')) {
+                    video.pause();
+                    $(this).removeClass('v-play');
+                } else {
+                    video.play();
+                    $(this).addClass('v-play');
+                }
+            })
+        }
+        if($('#f-date').length) {
+            $( "#f-date" ).datepicker({
+                dateFormat: "d MM yy",
+                changeMonth: true,//this option for allowing user to select month
+                changeYear: true //this option for allowing user to select from year range
+            });
         }
 	});
 });

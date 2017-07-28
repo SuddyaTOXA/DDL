@@ -303,13 +303,22 @@
           > li {
             width: 100%;
           }
-
+          .back {
+            .info-decs {
+              max-width: 80%;
+            }
+          }
         }
         &.two-el {
           margin: -164px -10px 6px;
           > li {
             padding: 0 10px;
             width: 50%;
+          }
+          .back {
+            .info-decs {
+              max-width: 80%;
+            }
           }
         }
       }

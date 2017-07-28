@@ -235,6 +235,9 @@ img {
   -o-transition: 0.35s;
   transition: 0.35s; }
 
+#ui-datepicker-div {
+  z-index: 999 !important; }
+
 a.btn, .btn {
   position: relative;
   display: inline-block;
@@ -524,11 +527,15 @@ a.btn, .btn {
     margin-bottom: 25px; }
     .info-list.one-el > li {
       width: 100%; }
+    .info-list.one-el .back .info-decs {
+      max-width: 80%; }
   .info-list.two-el {
     margin: -164px -10px 6px; }
     .info-list.two-el > li {
       padding: 0 10px;
       width: 50%; }
+    .info-list.two-el .back .info-decs {
+      max-width: 80%; }
 
 .info-icon-wrap {
   margin-bottom: 10px;
@@ -890,10 +897,19 @@ a.btn, .btn {
     margin-bottom: 0; }
     .info-list > li {
       width: 100%; }
+      .info-list > li .back .info-decs {
+        max-width: 80%; }
+    .info-list.one-el {
+      margin-top: -123px; }
     .info-list.two-el {
       margin-top: -123px; }
       .info-list.two-el > li {
         width: 100%; }
+
+  .empty + .section-about-us .info-list,
+  .empty + .section-about-us .info-list .one-el,
+  .empty + .section-about-us .info-list .two-el {
+    margin-top: -203px; }
 
   .hero-video-v2 .container:before, .hero-video-v2 .container:after {
     width: 80px; } }

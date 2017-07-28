@@ -215,12 +215,27 @@
         &:not(:last-child) {
         }
       }
+      .back {
+        .info-decs {
+          max-width: 80%;
+        }
+      }
+    }
+    &.one-el {
+      margin-top: -123px;
     }
     &.two-el {
       margin-top: -123px;
       > li {
         width: 100%;
       }
+    }
+  }
+  .empty + .section-about-us {
+    .info-list,
+    .info-list .one-el,
+    .info-list .two-el {
+      margin-top: -203px;
     }
   }
   .hero-video-v2 .container:before, .hero-video-v2 .container:after {
