@@ -164,13 +164,17 @@
 @media all and (max-width: 640px) {
   .review-img-wrap {
     float: none;
-    margin: 0 auto 8px;
+    margin: 0 auto 15px;
   }
   .review-desc {
     padding: 0;
   }
   .review-desc .content {
     margin-bottom: 14px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: calc(50% - 25px);
   }
   .swiper-button-prev,
   .swiper-container-rtl .swiper-button-next {
