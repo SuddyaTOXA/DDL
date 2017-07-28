@@ -19,3 +19,46 @@
 #ui-datepicker-div {
   z-index: 999 !important;
 }
+
+
+input::-webkit-input-placeholder {
+  font-size: $size-small;
+  font-family: $font-main;
+  color: #192632;
+}
+input::-moz-placeholder {
+  font-size: $size-small;
+  font-family: $font-main;
+  color: #192632;
+}
+input:-ms-input-placeholder {
+  font-size: $size-small;
+  font-family: $font-main;
+  color: #192632;
+}
+input:-moz-placeholder {
+  font-size: $size-small;
+  font-family: $font-main;
+  color: #192632;
+}
+
+textarea::-webkit-input-placeholder {
+  font-size: $size-small;
+  font-family: $font-main;
+  color: #192632;
+}
+textarea::-moz-placeholder {
+  font-size: $size-small;
+  font-family: $font-main;
+  color: #192632;
+}
+textarea:-ms-input-placeholder {
+  font-size: $size-small;
+  font-family: $font-main;
+  color: #192632;
+}
+textarea:-moz-placeholder {
+  font-size: $size-small;
+  font-family: $font-main;
+  color: #192632;
+}

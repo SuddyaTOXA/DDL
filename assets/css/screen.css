@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 select, input, textarea {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   vertical-align: middle;
   color: #192632; }
 
@@ -237,6 +237,46 @@ img {
 
 #ui-datepicker-div {
   z-index: 999 !important; }
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #192632; }
+
+input::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #192632; }
+
+input:-ms-input-placeholder {
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #192632; }
+
+input:-moz-placeholder {
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #192632; }
+
+textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #192632; }
+
+textarea::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #192632; }
+
+textarea:-ms-input-placeholder {
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #192632; }
+
+textarea:-moz-placeholder {
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #192632; }
 
 a.btn, .btn {
   position: relative;
