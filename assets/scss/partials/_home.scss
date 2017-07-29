@@ -451,7 +451,7 @@
         line-height: 116px;
         text-align: center;
         @include border-radius(50%);
-        background-color: red;
+        background-color: $white;
         img {
           max-width: 100%;
           height: auto;
@@ -487,7 +487,7 @@
     height: 105px;
     left: 160px;
     top: -22px;
-    background-image: url(../../img/quotes.png);
+    background-image: url(../img/quotes.png);
     @include bg();
     opacity: .1;
   }
