@@ -547,7 +547,7 @@ a.btn, .btn {
     position: relative;
     display: inline-block;
     width: 33.33%;
-    margin-right: -6px;
+    margin-right: -5px;
     margin-bottom: 20px; }
     .info-list > li:nth-child(3n+2):not(:last-child) {
       top: -20px; }
