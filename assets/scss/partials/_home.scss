@@ -133,51 +133,6 @@
           left: -20px;
         }
       }
-//.hero-video {
-//  background-color: #E8F3F1;
-//  .container {
-//    overflow: hidden;
-//    position: relative;
-//    max-width: 1333px;
-//    height: 720px;
-//    @include bg();
-//    &:before,
-//    &:after {
-//      position: absolute;
-//      z-index: 5;
-//      content: '';
-//      height: 100%;
-//      width: 100px;
-//      top: 0;
-//      background: rgba(232,243,241,1);
-//      background: -moz-linear-gradient(left, rgba(232,243,241,1) 0%, rgba(232,243,241,0.83) 15%, rgba(232,243,241,0.54) 53%, rgba(232,243,241,0) 100%);
-//      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(232,243,241,1)), color-stop(15%, rgba(232,243,241,0.83)), color-stop(53%, rgba(232,243,241,0.54)), color-stop(100%, rgba(232,243,241,0)));
-//      background: -webkit-linear-gradient(left, rgba(232,243,241,1) 0%, rgba(232,243,241,0.83) 15%, rgba(232,243,241,0.54) 53%, rgba(232,243,241,0) 100%);
-//      background: -o-linear-gradient(left, rgba(232,243,241,1) 0%, rgba(232,243,241,0.83) 15%, rgba(232,243,241,0.54) 53%, rgba(232,243,241,0) 100%);
-//      background: -ms-linear-gradient(left, rgba(232,243,241,1) 0%, rgba(232,243,241,0.83) 15%, rgba(232,243,241,0.54) 53%, rgba(232,243,241,0) 100%);
-//      background: linear-gradient(to right, rgba(232,243,241,1) 0%, rgba(232,243,241,0.83) 15%, rgba(232,243,241,0.54) 53%, rgba(232,243,241,0) 100%);
-//      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8f3f1', endColorstr='#e8f3f1', GradientType=1 );
-//    }
-//    &:before {
-//      left: 0;
-//    }
-//    &:after {
-//      right: 0;
-//      @include css3-prefix('transform','rotate(180deg)');
-//    }
-//  }
-//  video {
-//    position: absolute;
-//    z-index: 1;
-//    min-height: 100%;
-//    min-width: 100%;
-//    width: auto;
-//    height: auto;
-//    top: 50%;
-//    left: 50%;
-//    @include css3-prefix('transform', 'translate(-50%, -50%)');
-//  }
-//}
 .hero-video-v2 {
   background: rgba(232,243,241,1);
   .container {
@@ -280,8 +235,9 @@
           position: relative;
           display: inline-block;
           width: 33.33%;
-          margin-right: -5px;
+          margin-right: -6px;
           margin-bottom: 20px;
+          color: $white;
           &:nth-child(3n+2) {
             &:not(:last-child) {
               top: -20px;
@@ -351,7 +307,8 @@
               color: $white;
             }
           }
-          .flip-container:hover .flipper, .flip-container.hover .flipper {
+          .flip-container:not(.no-alternative-text):hover .flipper,
+          .flip-container.hover:not(.no-alternative-text) .flipper {
             transform: rotateY(180deg);
           }
           .flip-container, .front, .back {
@@ -390,7 +347,6 @@
           .back {
             transform: rotateY(180deg);
           }
-
 
 .section-reviews {
   overflow: hidden;

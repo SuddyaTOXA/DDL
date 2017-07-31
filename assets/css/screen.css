@@ -547,8 +547,9 @@ a.btn, .btn {
     position: relative;
     display: inline-block;
     width: 33.33%;
-    margin-right: -5px;
-    margin-bottom: 20px; }
+    margin-right: -6px;
+    margin-bottom: 20px;
+    color: #ffffff; }
     .info-list > li:nth-child(3n+2):not(:last-child) {
       top: -20px; }
       .info-list > li:nth-child(3n+2):not(:last-child) .flip-container, .info-list > li:nth-child(3n+2):not(:last-child) .front, .info-list > li:nth-child(3n+2):not(:last-child) .back {
@@ -602,7 +603,8 @@ a.btn, .btn {
     margin-bottom: 4px;
     color: #ffffff; }
 
-.flip-container:hover .flipper, .flip-container.hover .flipper {
+.flip-container:not(.no-alternative-text):hover .flipper,
+.flip-container.hover:not(.no-alternative-text) .flipper {
   transform: rotateY(180deg); }
 
 .flip-container, .front, .back {
