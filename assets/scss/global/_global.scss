@@ -138,6 +138,9 @@ img {
       clear: both;
     }
   }
+  iframe {
+    max-width: 100%;
+  }
 }
 .inverse {
   color: $white;

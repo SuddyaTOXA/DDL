@@ -59,8 +59,8 @@ jQuery(function($){
         }
 
 
-        if($('#f-date').length) {
-            $( "#f-date" ).datepicker({
+        if($('.input-date').length) {
+            $(".input-date").datepicker({
                 dateFormat: "d MM yy",
                 changeMonth: true,//this option for allowing user to select month
                 changeYear: true //this option for allowing user to select from year range

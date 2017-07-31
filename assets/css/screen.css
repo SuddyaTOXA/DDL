@@ -196,6 +196,8 @@ img {
       display: block;
       margin: 0 auto 12px;
       clear: both; }
+  .content iframe {
+    max-width: 100%; }
 
 .inverse {
   color: #ffffff; }
@@ -341,6 +343,31 @@ a.btn, .btn {
     font-size: 24px;
     line-height: 1.5;
     text-shadow: 0 0 28px rgba(255, 255, 255, 0.26); }
+  .section-hero .wpcf7-form-control-wrap {
+    display: block; }
+  .section-hero span.wpcf7-not-valid-tip {
+    font-size: 0.8em;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    text-align: center; }
+  .section-hero .wpcf7-not-valid {
+    border: 1px solid #f00; }
+  .section-hero div.wpcf7-response-output {
+    margin: 2em -20px 1em;
+    padding: 0.5em 0.5em;
+    font-size: 0.9em;
+    line-height: 1.4;
+    text-align: center; }
+    @media all and (min-width: 768px) {
+      .section-hero div.wpcf7-response-output:last-child {
+        margin-bottom: 0; } }
+    @media all and (max-width: 767px) {
+      .section-hero div.wpcf7-response-output {
+        margin: 2em 0 1em; } }
+  .section-hero div.wpcf7 .ajax-loader {
+    position: absolute;
+    top: 12px; }
 
 .left-box,
 .right-box {
@@ -503,6 +530,10 @@ a.btn, .btn {
     margin: 0 auto 52px; }
     .section-about-us .content + .form-box {
       margin-top: 100px; }
+  .section-about-us .section-title {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; }
 
 .bottom-box {
   position: relative;
@@ -577,6 +608,10 @@ a.btn, .btn {
       width: 50%; }
     .info-list.two-el .back .info-decs {
       max-width: 80%; }
+  .info-list.one-el .box-title,
+  .info-list.one-el .info-decs, .info-list.two-el .box-title,
+  .info-list.two-el .info-decs {
+    max-width: 320px; }
 
 .info-icon-wrap {
   margin-bottom: 10px;
@@ -694,7 +729,7 @@ a.btn, .btn {
 
 .review-box {
   position: relative;
-  max-width: 982px;
+  max-width: 980px;
   min-height: 255px;
   margin: 0 auto;
   padding-top: 40px;
@@ -719,14 +754,21 @@ a.btn, .btn {
   .review-img-wrap img {
     max-width: 100%;
     height: auto;
-    vertical-align: middle; }
+    vertical-align: middle;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
 
 .review-desc {
   position: relative;
   z-index: 10;
   overflow: hidden;
-  max-width: 860px;
   padding-left: 28px; }
+  .review-desc:first-child {
+    padding-left: 0; }
   .review-desc .content {
     margin-bottom: 23px; }
 

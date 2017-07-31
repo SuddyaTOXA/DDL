@@ -30,6 +30,39 @@
     line-height: 1.5;
     text-shadow: 0 0 28px rgba(255, 255, 255, 0.26);
   }
+
+  .wpcf7-form-control-wrap {
+    display: block;
+  }
+  span.wpcf7-not-valid-tip {
+    font-size: 0.8em;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    text-align: center;
+  }
+  .wpcf7-not-valid {
+    border: 1px solid #f00;
+  }
+  div.wpcf7-response-output {
+    margin: 2em -20px 1em;
+    padding: 0.5em 0.5em;
+    font-size: 0.9em;
+    line-height: 1.4;
+    text-align: center;
+    @media all and (min-width: 768px) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @media all and (max-width: 767px) {
+      margin: 2em 0 1em;
+    }
+  }
+  div.wpcf7 .ajax-loader {
+    position: absolute;
+    top: 12px;
+  }
 }
   .left-box,
   .right-box {
@@ -192,6 +225,11 @@
       margin-top: 100px;
     }
   }
+  .section-title {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
   .bottom-box {
     position: relative;
@@ -275,6 +313,13 @@
             .info-decs {
               max-width: 80%;
             }
+          }
+        }
+        &.one-el,
+        &.two-el {
+          .box-title,
+          .info-decs {
+            max-width: 320px;
           }
         }
       }
@@ -390,7 +435,7 @@
   }
   .review-box {
     position: relative;
-    max-width: 982px;
+    max-width: 980px;
     min-height: 255px;
     margin: 0 auto;
     padding-top: 40px;
@@ -412,14 +457,18 @@
           max-width: 100%;
           height: auto;
           vertical-align: middle;
+          @include border-radius(50%);
         }
       }
       .review-desc {
         position: relative;
         z-index: 10;
         overflow: hidden;
-        max-width: 860px;
+        //max-width: 860px;
         padding-left: 28px;
+        &:first-child {
+          padding-left: 0;
+        }
         .content {
           margin-bottom: 23px;
         }
