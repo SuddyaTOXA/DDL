@@ -505,7 +505,6 @@
 }
 .swiper-reviews {
   padding-bottom: 28px;
-}
   .swiper-button-next,
   .swiper-button-prev {
     top: calc(50% - 50px);
@@ -521,21 +520,23 @@
   .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom, .swiper-pagination-fraction {
 
-  }    .swiper-pagination-bullet {
-        width: 20px;
-        height: 20px;
-        border: 2px solid $white;
-        background-color: transparent;
-        opacity: 1;
-        &:hover,
-        &:focus {
-          background-color: $white;
-          opacity: .7;
-        }
-      }
-      .swiper-pagination-bullet-active {
-        background-color: $white;
-      }
+  }
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    border: 2px solid $white;
+    background-color: transparent;
+    opacity: 1;
+    &:hover,
+    &:focus {
+      background-color: $white;
+      opacity: .7;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $white;
+  }
+}
 .empty {
   padding: 0 40px;
   min-height: 201px;

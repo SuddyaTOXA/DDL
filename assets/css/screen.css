@@ -801,31 +801,28 @@ a.btn, .btn {
 
 .swiper-reviews {
   padding-bottom: 28px; }
-
-.swiper-button-next,
-.swiper-button-prev {
-  top: calc(50% - 50px);
-  margin-top: -28px;
-  width: 35px;
-  height: 55px;
-  background-size: cover; }
-  .swiper-button-next:hover, .swiper-button-next:focus,
-  .swiper-button-prev:hover,
-  .swiper-button-prev:focus {
-    opacity: .8; }
-
-.swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ffffff;
-  background-color: transparent;
-  opacity: 1; }
-  .swiper-pagination-bullet:hover, .swiper-pagination-bullet:focus {
-    background-color: #ffffff;
-    opacity: .7; }
-
-.swiper-pagination-bullet-active {
-  background-color: #ffffff; }
+  .swiper-reviews .swiper-button-next,
+  .swiper-reviews .swiper-button-prev {
+    top: calc(50% - 50px);
+    margin-top: -28px;
+    width: 35px;
+    height: 55px;
+    background-size: cover; }
+    .swiper-reviews .swiper-button-next:hover, .swiper-reviews .swiper-button-next:focus,
+    .swiper-reviews .swiper-button-prev:hover,
+    .swiper-reviews .swiper-button-prev:focus {
+      opacity: .8; }
+  .swiper-reviews .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    opacity: 1; }
+    .swiper-reviews .swiper-pagination-bullet:hover, .swiper-reviews .swiper-pagination-bullet:focus {
+      background-color: #ffffff;
+      opacity: .7; }
+  .swiper-reviews .swiper-pagination-bullet-active {
+    background-color: #ffffff; }
 
 .empty {
   padding: 0 40px;
@@ -959,16 +956,14 @@ a.btn, .btn {
   .review-desc .content {
     margin-bottom: 14px; }
 
-  .swiper-button-prev,
-  .swiper-button-next {
+  .swiper-reviews .swiper-button-prev,
+  .swiper-reviews .swiper-button-next {
     top: calc(50% - 25px); }
-
-  .swiper-button-prev,
-  .swiper-container-rtl .swiper-button-next {
+  .swiper-reviews .swiper-button-prev,
+  .swiper-reviews .swiper-container-rtl .swiper-button-next {
     left: 0; }
-
-  .swiper-button-next,
-  .swiper-container-rtl .swiper-button-prev {
+  .swiper-reviews .swiper-button-next,
+  .swiper-reviews .swiper-container-rtl .swiper-button-prev {
     right: 0; }
 
   .slider-box:before {
