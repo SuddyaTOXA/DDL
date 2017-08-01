@@ -113,6 +113,7 @@
       margin-bottom: 10px;
       font-family: $font-main;
       font-size: $size-heading;
+      line-height: 1.25;
       text-align: center;
       color: $color-text-label;
     }
@@ -131,6 +132,11 @@
           @include css3-prefix('transform','translate(0, -50%)');
         }
       }
+      .mc4wp-form & {
+        > li {
+          padding-left: 0;
+        }
+      }
       .other & {
         margin: 0 -5px;
         > li {
@@ -145,7 +151,7 @@
       }
     }
 
-      .form-btn-box {
+      .section-hero .form-btn-box {
         position: relative;
         margin-top: 41px;
         text-align: center;
